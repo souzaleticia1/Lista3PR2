@@ -1,0 +1,274 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Lista3PR2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int e;
+
+            Console.WriteLine("=====MENU=====");
+            Console.WriteLine("1- Exercício 1");
+            Console.WriteLine("2- Exercício 2");
+            Console.WriteLine("3- Exercício 3");
+            Console.WriteLine("4- Exercício 4");
+            Console.WriteLine("5- Exercício 5");
+            Console.WriteLine("6- Exercício 6");
+            Console.WriteLine("Digite a opção desejada: ");
+
+            e = int.Parse(Console.ReadLine());
+
+            switch (e)
+            {
+                case 1:
+
+                    int s;
+
+                    Console.WriteLine("=====MENU=====");
+                    Console.WriteLine("1- Domingo");
+                    Console.WriteLine("2- Segunda");
+                    Console.WriteLine("3- Terça");
+                    Console.WriteLine("4- Quarta");
+                    Console.WriteLine("5- Quinta");
+                    Console.WriteLine("6- Sexta");
+                    Console.WriteLine("7- Sábado");
+                    Console.WriteLine("Digite a opção desejada: ");
+                    s = int.Parse(Console.ReadLine());
+
+                    switch (s)
+                    {
+                        case 1:
+
+                            Console.WriteLine("Domingo");
+                            break;
+
+                        case 2:
+
+                            Console.WriteLine("Segunda");
+                            break;
+
+                        case 3:
+
+                            Console.WriteLine("Terça");
+                            break;
+
+                        case 4:
+
+                            Console.WriteLine("Quarta");
+                            break;
+
+                        case 5:
+
+                            Console.WriteLine("Quinta");
+                            break;
+
+                        case 6:
+
+                            Console.WriteLine("Sexta");
+                            break;
+
+                        case 7:
+
+                            Console.WriteLine("Sábado");
+                            break;
+
+                        default:
+
+                            Console.WriteLine("Valor inválido");
+                            break;
+                            
+                    }
+                    Console.ReadKey();
+                    break;
+
+                case 2:
+                    
+                        float totalCompra, formPag, totalPag;
+
+                        Console.WriteLine("=====MENU=====");
+                        Console.WriteLine("1- Dinheiro");
+                        Console.WriteLine("2- Pix");
+                        Console.WriteLine("3- Cartão de débito");
+                        Console.WriteLine("4- Cartão de crédito");
+                        Console.WriteLine("Digite a opção desejada: ");
+                        formPag = int.Parse(Console.ReadLine());
+                        Console.WriteLine("Digite o valor total da compra: ");
+                        totalCompra = int.Parse(Console.ReadLine());
+
+                        switch (formPag)
+                        {
+                            case 1:
+                             
+                                totalPag = totalCompra - 0.15f * totalCompra;
+                                Console.WriteLine("O valor total a pagar é: " + totalPag);
+                                break;
+
+                            case 2:
+
+                                totalPag = totalCompra - 0.10f * totalCompra;
+                                Console.WriteLine("O valor total a pagar é: " + totalPag);
+                                break;
+
+                            case 3:
+
+                                totalPag = totalCompra + 0.05f * totalCompra;
+                                Console.WriteLine("O valor total a pagar é: " + totalPag);
+                                break;
+
+                            case 4:
+
+                                totalPag = totalCompra + 0.10f * totalCompra;
+                                Console.WriteLine("O valor total a pagar é: " + totalPag);
+                                break;
+
+                            default:
+
+                                Console.WriteLine("Valor inválido");
+                                break;
+
+                        }
+                    Console.ReadKey();
+                    break;
+
+                case 3:
+
+                    int ano, mes;
+
+                    Console.WriteLine("=====MENU=====");
+                    Console.WriteLine("1- Janeiro");
+                    Console.WriteLine("2- Fevereiro");
+                    Console.WriteLine("3- Março");
+                    Console.WriteLine("4- Abril");
+                    Console.WriteLine("5- Maio");
+                    Console.WriteLine("6- Junho");
+                    Console.WriteLine("7- Julho");
+                    Console.WriteLine("8- Agosto");
+                    Console.WriteLine("9- Setembro");
+                    Console.WriteLine("10- Outubro");
+                    Console.WriteLine("11- Novembro");
+                    Console.WriteLine("12- Dezembro");
+                    Console.WriteLine("Digite a opção desejada: ");
+                    mes = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite o ano:");
+                    ano = int.Parse(Console.ReadLine());
+
+                    switch (mes)
+                    {
+                        case 1:
+
+                            Console.WriteLine("Janeiro");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        case 2:
+
+                            if (ano % 4 == 0)
+                            {
+                                Console.WriteLine("Fevereiro");
+                                Console.WriteLine("29 dias");
+                                break;
+                            }
+                            else
+                                Console.WriteLine("Fevereiro");
+                            Console.WriteLine("28 dias");
+                            break;
+
+                        case 3:
+
+                            Console.WriteLine("Março");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        case 4:
+
+                            Console.WriteLine("Abril");
+                            Console.WriteLine("30 dias");
+                            break;
+
+                        case 5:
+
+                            Console.WriteLine("Maio");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        case 6:
+
+                            Console.WriteLine("Junho");
+                            Console.WriteLine("30 dias");
+                            break;
+
+                        case 7:
+
+                            Console.WriteLine("Julho");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        case 8:
+
+                            Console.WriteLine("Agosto");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        case 9:
+
+                            Console.WriteLine("Setembro");
+                            Console.WriteLine("30 dias");
+                            break;
+
+                        case 10:
+
+                            Console.WriteLine("Outubro");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        case 11:
+
+                            Console.WriteLine("Novembro");
+                            Console.WriteLine("30 dias");
+                            break;
+
+                        case 12:
+
+                            Console.WriteLine("Dezembro");
+                            Console.WriteLine("31 dias");
+                            break;
+
+                        default:
+
+                            Console.WriteLine("Valor inválido");
+                            break;
+                    }
+                    Console.ReadKey();
+                    break;
+
+                case 4:
+
+                    int op;
+                    float n1, n2, r;
+
+                    Console.WriteLine("=====MENU=====");
+                    Console.WriteLine("1- +");
+                    Console.WriteLine("2- -");
+                    Console.WriteLine("3- *");
+                    Console.WriteLine("4- /");
+                    Console.WriteLine("5- ^");
+                    Console.WriteLine("Digite a opção desejada: ");
+                    op = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite o primeiro valor: ");
+                    n1= float.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite o primeiro valor: ");
+                    n2= float.Parse(Console.ReadLine());
+
+                    switch (op)
+                    {
+                        case 1:
+                    }
+            }
+        }
+    }
+}
