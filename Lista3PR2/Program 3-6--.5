@@ -249,7 +249,7 @@ namespace Lista3PR2
                 case 4:
 
                     int op;
-                    float n1, n2, r;
+                    double n1, n2, r;
 
                     Console.WriteLine("=====MENU=====");
                     Console.WriteLine("1- +");
@@ -268,8 +268,179 @@ namespace Lista3PR2
                     {
                         case 1:
 
+                            r = n1 + n2
+                            Console.WriteLine("Resultado: " + r);
+                            break;
                             
+                        case 2:
+
+                            r = n1 - n2
+                            Console.WriteLine("Resultado: " + r);
+                            break;
+
+                        case 3:
+
+                            r = n1 * n2
+                            Console.WriteLine("Resultado: " + r);
+                            break;
+
+                        case 4:
+
+                            r = n1 / n2
+                            Console.WriteLine("Resultado: " + r);
+                            break;
+
+                        case 5:
+
+                            r = Math.Pow(n1, n2);
+                            Console.WriteLine("Resultado: " + r);
+                            break;
+
+                        default
+
+                            Console.WriteLine("Valor inválido");
+
                     }
+                    Console.ReadKey();
+                    break;
+
+               case 5:
+
+                    int c;
+                    float s, sA, d;
+
+                    Console.WriteLine("=====MENU=====");
+                    Console.WriteLine("1- Professor -Código: 101");
+                    Console.WriteLine("2- Secretário -Código: 102");
+                    Console.WriteLine("3- Publicitário -Código: 102");
+                    Console.WriteLine("4- Jornalista -Código: 204");
+                    Console.WriteLine("5- Mecânico -Código: 206");
+                    Console.WriteLine("6- Estagiário -Código: 301");
+                    Console.WriteLine("7- Técnico de TI -Código: 302");
+                    Console.WriteLine("Digite o seu cargo: ");
+                    c = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite o seu salário: ");
+                    s = float.Parse(Console.ReadLine());
+
+                    switch (c)
+                    {
+
+                        case 1:
+
+                            st = s + s * 0.075f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                            
+                        case 2:
+
+                            st = s + s * 0.097f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                            
+                        case 3:
+
+                            st = s + s * 0.117f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                            
+                        case 4:
+
+                            st = s + s * 0.089f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                            
+                        case 5:
+
+                            st = s + s * 0.1324f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                            
+                        case 6:
+
+                            st = s + s * 0.104f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                            
+                        case 7:
+
+                            st = s + s * 0.146f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+
+                        default:
+
+                            st = s + s * 0.435f;
+                            d = sA - s
+                            Console.WriteLine("Salário antigo: " + s);
+                            Console.WriteLine("Salário atual: " + sA);
+                            Console.WriteLine("Diferença: " + d);
+                            break;
+                    }
+                    Console.ReadKey();
+                    break;
+
+                    case 6:
+
+                    float sM, imp, sL;
+
+                    Console.WriteLine("Digite o salário mensal: ");
+                    sA = float.Parse( Console.ReadLine() );
+
+                    if (sM <= 1903.98f)
+                    {
+                        Console.WriteLine("Insento de imposto de renda");
+                    }
+                    else if (sM > 1903.98f && sA <= 2826.65f)
+                    {
+                        imp = sM * (7.5f / 100);
+                        sL = sM - imp;
+                        Console.WriteLine("Deverá ser recolhido R$" + imp + " do salário mensal. Ficando com R$" + sL);
+                    }
+                    else if (sM > 2826.65f && sA <= 3751.05f)
+                    {
+                        imp = sM * (15.0f / 100);
+                        sL = sM - imp;
+                        Console.WriteLine("Deverá ser recolhido R$" + imp + " do salário mensal. Ficando com R$" + sL);
+                    }
+                    else if (sM > 3751.05f && sA <= 4664.68f)
+                    {
+                        imp = sM * (22.5f / 100);
+                        sL = sM - imp;
+                        Console.WriteLine("Deverá ser recolhido R$" + imp + " do salário mensal. Ficando com R$" + sL);
+                    }
+                    else if (sM > 4664.68f)
+                    {
+                        imp = sM * (27.5f / 100);
+                        sL = sM - imp;
+                        Console.WriteLine("Deverá ser recolhido R$" + imp + " do salário mensal. Ficando com R$" + sL);
+                    }
+                    Console.ReadKey();
+                    break;
+
+                default:
+                    Console.WriteLine("Valor inválido");
+                    break;
             }
         }
     }
